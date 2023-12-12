@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>My Webpage</title>
+    <style>
+        body {
+            background-image: url("../img/AC15_ACOdyssey_16x9.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 0px; /* 下移50px */
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            padding-top: 50px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .image {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .image img {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .image span {
+            display: block;
+            margin-top: 10px;
+            color: white;
+            font-size: 16px;
+            animation: fade 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .gold-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: gold;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            animation: color-change 2s infinite;
+        }
+
+        @keyframes color-change {
+            0% { background-color: gold; }
+            50% { background-color: orange; }
+            100% { background-color: gold; }
+        }
+
+    </style>
+</head>
+<body>
+<h1>刺客信条的世界观</h1>
+<div class="container">
+    <div class="image">
+        <img src="../img/0.png" alt="Image 1">
+        <span>暗示和隐喻的使用：刺客信条系列的游戏世界中使用了很多暗示和隐喻。例如，刺客和圣殿骑士的斗争暗示了宗教、权力和自由的争斗，以及现代社会中的一些问题。这些暗示和隐喻让游戏更加深入，也让玩家在游戏中得到了更多的启示和思考。</span>
+    </div>
+    <div class="image">
+        <img src="../img/01.png" alt="Image 2">
+        <span>神话传说的应用：刺客信条系列的游戏世界还应用了一些神话和传说，例如《刺客信条：奥德赛》中的希腊神话和《刺客信条：英灵殿》中的北欧神话。这些神话和传说为游戏增添了更多的神秘感和想象空间。</span>
+    </div>
+    <div class="image">
+        <img src="../img/3.png" alt="Image 3">
+        <span>科技元素的加入：刺客信条系列的游戏世界还加入了一些科技元素，例如《刺客信条》中的“Animus”和《刺客信条3》中的“Animus 3.0”。这些科技元素不仅让游戏更加有趣，也让玩家在游戏中可以体验到未来科技的发展。</span>
+    </div>
+</div>
+<a href="index.html" class="gold-button">返回</a>
+<div class="matrix-effect"></div>
+</body>
+</html>
