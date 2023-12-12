@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url("../img/vahalla.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .image-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-wrapper img {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            text-align: center;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .snowflake:before {
+            content: " ";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 70%);
+            animation: snow 10s linear infinite;
+        }
+
+        @keyframes snow {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(100vh);
+            }
+        }
+
+        .return-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: gold;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            z-index: 2; /* Add this line to make the button appear above the snowflake */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Assassin's Creed Valhalla</h1>
+    <div class="image-wrapper">
+        <img src="../img/Evorf.jpg" alt="Image 1">
+        <img src="../img/Evorm.jpg" alt="Image 2">
+    </div>
+    <p class="caption">幼年父母被敌对氏族杀害，因在逃亡过程中在狼口逃生获得称号“狼吻者”，后逐渐强大，为父母报仇后追随义兄西格德，踏上英格兰，开创属于自己的领地。并于盘踞英格兰的教团抗争（上古维序者，圣殿骑士的前身）。
+        艾沃尔为伊述族人后裔，同时亦为北欧主神，阿斯加德的至高者——奥丁的转生者。</p>
+    <button class="return-button" onclick="location.href='index.html'">返回</button>
+</div>
+<div class="snowflake"></div>
+</body>
+</html>

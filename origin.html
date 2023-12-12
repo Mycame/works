@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .text0 {
+            color: #fcf804;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url("../img/1.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: coolAnimation 500s infinite;
+        }
+
+        @keyframes coolAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text {
+            text-align: center;
+            width: 50%;
+            color: white;
+            font-size: 24px;
+        }
+
+        .button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: gold;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+<div class="text">
+    <p class="text0">《刺客信条：起源》（Assassin's Creed Origins）是一部由育碧蒙特利尔工作室开发、育碧发行的动作冒险游戏。本作是《刺客信条》主系列的第七部作品，也是系列首次把时间线推前到刺客信条初代以前。
+        游戏背景设定于托勒密王朝埃及艳后统治下的埃及，玩家所操控的角色是一位隶属于法老的护卫，称为守护者，是一名来自锡瓦名为巴耶克的埃及刺客。</p>
+</div>
+
+<img src="../img/bayeke.png" alt="图 1" style="position: absolute; top: 100px; left: 100px; width: 180x; height: 150px;">
+<figcaption>图 1为刺客巴耶克</figcaption><br>
+
+<img src="../img/Aya.png" alt="图 2" style="position: absolute; top: 100px; right: 100px; width: 240px; height: 150px;">
+<figcaption> 图 2 为刺客爱雅</figcaption>
+
+<a class="button" href="index.html">返回</a>
+
+</body>
+</html>
